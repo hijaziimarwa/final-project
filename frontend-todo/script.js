@@ -28,6 +28,19 @@ function addTask() {
     deleteBtn.addEventListener("click", function () {
       li.remove();
     });
+     editBtn.addEventListener("click", function () {
+      
+      if (editBtn.classList.contains("fa-edit")) {
+        taskInput.value = textSpan.textContent; 
+        editBtn.classList.remove("fa-edit");
+        editBtn.classList.add("fa-floppy-o");
+      } else {
+        textSpan.textContent = taskInput.value;
+        taskInput.value = ""; 
+        editBtn.classList.remove("fa-floppy-o");
+        editBtn.classList.add("fa-edit");
+      }
+    });
   }
 }
 
