@@ -27,3 +27,5 @@ function addTask() {
     taskInput.value = "";
   }
 }
+
+addTaskBtn.addEventListener("click", addTask);
