@@ -41,6 +41,20 @@ function addTask() {
         editBtn.classList.add("fa-edit");
       }
     });
+        checkbox.addEventListener("click", function () {
+      checkbox.classList.toggle("checked");
+      if (checkbox.classList.contains("fa-circle-o")) {
+        checkbox.classList.remove("fa-circle-o");
+        checkbox.classList.add("fa-check-circle");
+        li.classList.add("completed");
+        li.style.color = "green"; 
+      } else {
+        checkbox.classList.remove("fa-check-circle");
+        checkbox.classList.add("fa-circle-o");
+        li.style.color = ""; 
+        li.style.textDecoration = "none";
+      }
+    });
   }
 }
 
