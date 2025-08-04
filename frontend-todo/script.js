@@ -25,6 +25,9 @@ function addTask() {
     li.append(checkbox, textSpan, editBtn, deleteBtn);
     taskList.appendChild(li);
     taskInput.value = "";
+    deleteBtn.addEventListener("click", function () {
+      li.remove();
+    });
   }
 }
 
