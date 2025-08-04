@@ -48,6 +48,7 @@ function addTask() {
         checkbox.classList.add("fa-check-circle");
         li.classList.add("completed");
         li.style.color = "green"; 
+        li.style.textDecoration='line-through'
       } else {
         checkbox.classList.remove("fa-check-circle");
         checkbox.classList.add("fa-circle-o");
@@ -59,3 +60,19 @@ function addTask() {
 }
 
 addTaskBtn.addEventListener("click", addTask);
+const modeIcon = document.getElementById("mode-icon");
+
+modeIcon.addEventListener("click", () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if (modeIcon.classList.contains("fa-toggle-off")) {
+    modeIcon.classList.remove("fa-toggle-off");
+    modeIcon.classList.add("fa-toggle-on");
+    document.body.style.backgroundColor = "#121212";
+  } else {
+    modeIcon.classList.remove("fa-toggle-on");
+    modeIcon.classList.add("fa-toggle-off");
+    document.body.style.backgroundColor = "white";
+  }
+});
