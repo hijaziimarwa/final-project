@@ -83,3 +83,24 @@ ul li{
     color: black;
 
 }
+.delete-btn {
+    margin-left: 10px; 
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+
+    
+}
+.delete-btn:hover {
+    color: red;
+}
+
+.edit-btn {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+}
+.edit-btn:hover {
+    color: blue; 
+}
