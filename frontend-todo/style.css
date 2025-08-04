@@ -67,3 +67,19 @@ body{
     background: #fff;
 
 }
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 10px;
+    margin:10px;
+    user-select: none;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;;
+    border-radius: 10px;
+    background: rgba(255, 255,255, 18);
+    color: black;
+
+}
