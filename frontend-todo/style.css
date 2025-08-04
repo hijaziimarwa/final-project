@@ -12,3 +12,19 @@ body{
     background: url('')
     no-repeat center/cover;
 }
+.todo-app{
+    background-color:purple;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: blanchedalmond;
+    border-radius: 20px;
+    box-shadow: 0 0 100px rgba(0, 0,0, 0.5);
+    border: 3px solid rgba(255, 255,255, 18);
+    backdrop-filter: blur(10px);
+}
