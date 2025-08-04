@@ -115,3 +115,22 @@ ul li{
 .checkbox .checked {
   color: green;
 }
+
+.switch-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.1s ease;
+}
+
+.switch-mode:hover {
+  color: purple;
+}
