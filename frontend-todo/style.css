@@ -104,3 +104,14 @@ ul li{
 .edit-btn:hover {
     color: blue; 
 }
+.checkbox {
+    margin-right: 10px; /* space between checkbox and text */
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s ease;
+  
+    
+}
+.checkbox .checked {
+  color: green;
+}
