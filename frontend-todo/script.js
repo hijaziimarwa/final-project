@@ -41,13 +41,12 @@ function addTask() {
         editBtn.classList.add("fa-edit");
       }
     });
-        checkbox.addEventListener("click", function () {
+      checkbox.addEventListener("click", function () {
       checkbox.classList.toggle("checked");
       if (checkbox.classList.contains("fa-circle-o")) {
         checkbox.classList.remove("fa-circle-o");
         checkbox.classList.add("fa-check-circle");
-        li.classList.add("completed");
-        li.style.color = "green"; 
+        li.style.color = "green";
         li.style.textDecoration='line-through'
       } else {
         checkbox.classList.remove("fa-check-circle");
@@ -55,6 +54,7 @@ function addTask() {
         li.style.color = ""; 
         li.style.textDecoration = "none";
       }
+      checkAllTasksCompleted();
     });
   }
 }
@@ -76,3 +76,12 @@ modeIcon.addEventListener("click", () => {
     document.body.style.backgroundColor = "white";
   }
 });
+function checkAllTasksCompleted() {
+  const allTasks = taskList.querySelectorAll("li");
+  const completedTasks = taskList.querySelectorAll(".fa-check-circle");
+
+  if (allTasks.length > 0 && completedTasks.length === allTasks.length) {
+    launchConfetti();
+  }
+}
+
