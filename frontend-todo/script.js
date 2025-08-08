@@ -60,6 +60,12 @@ function addTask() {
 }
 
 addTaskBtn.addEventListener("click", addTask);
+taskInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
+
 const modeIcon = document.getElementById("mode-icon");
 
 modeIcon.addEventListener("click", () => {
