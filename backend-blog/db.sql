@@ -24,3 +24,19 @@ CREATE TABLE comments (
     FOREIGN KEY (user_id) REFERENCES users(id) 
 );
 
+INSERT INTO users (name, email) VALUES
+('Marwa ', 'marwa@gmail.com'),
+('Jad', 'jad@gmail.com'),
+('Sami', 'sami@gmail.com');
+
+INSERT INTO posts (title, content, user_id) VALUES
+('Welcome to My Blog', 'This is the first post in my blog. Excited to start!', 1),
+('My Second Post', 'Here is some more interesting content.', 1),
+('Jad Travel Adventures', 'I love traveling and sharing my stories.', 2),
+('Sami Tech Tips', 'Sharing some useful tech tips and tricks.', 3);
+
+INSERT INTO comments (content, post_id, user_id) VALUES
+('Great first post, Marwa!', 1, 2),
+('Thanks for sharing!', 1, 3),
+('Can you share more travel photos?', 3, 1),
+('Very helpful tips, thanks Sami!', 4, 2);
